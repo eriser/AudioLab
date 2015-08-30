@@ -16,6 +16,10 @@
 		CCF36DF11B93885E009B6780 /* VoiceStreamRingModTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF36DF01B93885E009B6780 /* VoiceStreamRingModTests.m */; };
 		CCF36DFC1B938874009B6780 /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF36DFB1B938874009B6780 /* AudioController.m */; };
 		CCF36DFF1B938B48009B6780 /* lightUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF36DFE1B938B48009B6780 /* lightUpButton.m */; };
+		CCF36E021B93A359009B6780 /* keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF36E011B93A359009B6780 /* keyboard.m */; };
+		CCF36E051B93A90C009B6780 /* RingBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = CCF36E031B93A90C009B6780 /* RingBuffer.c */; };
+		CCF36E0A1B93AABD009B6780 /* AudioTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF36E091B93AABD009B6780 /* AudioTrack.m */; };
+		CCF36E0D1B93B32C009B6780 /* singleKey.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF36E0C1B93B32C009B6780 /* singleKey.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,14 @@
 		CCF36DFB1B938874009B6780 /* AudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioController.m; sourceTree = "<group>"; };
 		CCF36DFD1B938B48009B6780 /* lightUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lightUpButton.h; sourceTree = "<group>"; };
 		CCF36DFE1B938B48009B6780 /* lightUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lightUpButton.m; sourceTree = "<group>"; };
+		CCF36E001B93A359009B6780 /* keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyboard.h; sourceTree = "<group>"; };
+		CCF36E011B93A359009B6780 /* keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = keyboard.m; sourceTree = "<group>"; };
+		CCF36E031B93A90C009B6780 /* RingBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RingBuffer.c; sourceTree = "<group>"; };
+		CCF36E041B93A90C009B6780 /* RingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingBuffer.h; sourceTree = "<group>"; };
+		CCF36E081B93AABD009B6780 /* AudioTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioTrack.h; sourceTree = "<group>"; };
+		CCF36E091B93AABD009B6780 /* AudioTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioTrack.m; sourceTree = "<group>"; };
+		CCF36E0B1B93B32C009B6780 /* singleKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singleKey.h; sourceTree = "<group>"; };
+		CCF36E0C1B93B32C009B6780 /* singleKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = singleKey.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +103,8 @@
 				CCF36DD91B93885E009B6780 /* AppDelegate.m */,
 				CCF36DDB1B93885E009B6780 /* ViewController.h */,
 				CCF36DDC1B93885E009B6780 /* ViewController.m */,
-				CCF36DFA1B938874009B6780 /* AudioController.h */,
-				CCF36DFB1B938874009B6780 /* AudioController.m */,
-				CCF36DFD1B938B48009B6780 /* lightUpButton.h */,
-				CCF36DFE1B938B48009B6780 /* lightUpButton.m */,
+				CCF36E061B93AA97009B6780 /* Audio */,
+				CCF36E071B93AAA8009B6780 /* UI */,
 				CCF36DDE1B93885E009B6780 /* Main.storyboard */,
 				CCF36DE11B93885E009B6780 /* Images.xcassets */,
 				CCF36DE31B93885E009B6780 /* LaunchScreen.xib */,
@@ -127,6 +137,32 @@
 				CCF36DEF1B93885E009B6780 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCF36E061B93AA97009B6780 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				CCF36DFA1B938874009B6780 /* AudioController.h */,
+				CCF36DFB1B938874009B6780 /* AudioController.m */,
+				CCF36E031B93A90C009B6780 /* RingBuffer.c */,
+				CCF36E041B93A90C009B6780 /* RingBuffer.h */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		CCF36E071B93AAA8009B6780 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CCF36DFD1B938B48009B6780 /* lightUpButton.h */,
+				CCF36DFE1B938B48009B6780 /* lightUpButton.m */,
+				CCF36E0B1B93B32C009B6780 /* singleKey.h */,
+				CCF36E0C1B93B32C009B6780 /* singleKey.m */,
+				CCF36E001B93A359009B6780 /* keyboard.h */,
+				CCF36E011B93A359009B6780 /* keyboard.m */,
+				CCF36E081B93AABD009B6780 /* AudioTrack.h */,
+				CCF36E091B93AABD009B6780 /* AudioTrack.m */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,10 +265,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF36E051B93A90C009B6780 /* RingBuffer.c in Sources */,
 				CCF36DDD1B93885E009B6780 /* ViewController.m in Sources */,
 				CCF36DFF1B938B48009B6780 /* lightUpButton.m in Sources */,
+				CCF36E0D1B93B32C009B6780 /* singleKey.m in Sources */,
 				CCF36DDA1B93885E009B6780 /* AppDelegate.m in Sources */,
 				CCF36DFC1B938874009B6780 /* AudioController.m in Sources */,
+				CCF36E021B93A359009B6780 /* keyboard.m in Sources */,
+				CCF36E0A1B93AABD009B6780 /* AudioTrack.m in Sources */,
 				CCF36DD71B93885E009B6780 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +470,7 @@
 				CCF36DF61B93885E009B6780 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCF36DF71B93885E009B6780 /* Build configuration list for PBXNativeTarget "VoiceStreamRingModTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +479,7 @@
 				CCF36DF91B93885E009B6780 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
