@@ -64,9 +64,13 @@ static OSStatus InputModulatingRenderCallback (
             currentFrame++;
         }
         
-        pthread_mutex_lock(&(effectState->mutex));
-        RingBuffer_write(effectState->rb, &sample, 1);
-        pthread_mutex_unlock(&(effectState->mutex));
+        if (effectState->drawing) {
+            //pthread_mutex_lock(&(effectState->mutex));
+            //printf("%f ",sample);
+            RingBuffer_write(effectState->rb, &sample, 1);
+            //pthread_mutex_unlock(&(effectState->mutex));
+        }
+        
     }
     return noErr;
 }
@@ -203,6 +207,7 @@ static OSStatus InputModulatingRenderCallback (
     robotEffect.asbd = myASBD;
     robotEffect.sineFrequency = 200;
     robotEffect.sinePhase = M_PI/3.0;
+    robotEffect.drawing=NO;
     
     // set callback method
     AURenderCallbackStruct callbackStruct;
@@ -254,12 +259,13 @@ static OSStatus InputModulatingRenderCallback (
 
 -(float*)readBuffer{
     //NSLog(@"read buffer");
-    pthread_mutex_lock(&(robotEffect.mutex));
+    //pthread_mutex_lock(&(robotEffect.mutex));
     dataLength=getAvailableData(self.robotEffect.rb);
     //printf("%d ",dataLength);
     float *data=(float*)calloc(dataLength, sizeof(float));
     RingBuffer_read(self.robotEffect.rb, data, getAvailableData(self.robotEffect.rb));
-    pthread_mutex_unlock(&(robotEffect.mutex));
+    //printf("%d ",RingBuffer_available_space(robotEffect.rb));
+    //pthread_mutex_unlock(&(robotEffect.mutex));
     return data;
 }
 
@@ -275,7 +281,14 @@ static OSStatus InputModulatingRenderCallback (
 }
 
 
+-(void)setDrawingTo:(BOOL)isDrawing{
 
+    robotEffect.drawing=isDrawing;
+    if (!isDrawing) {
+        free(robotEffect.rb);
+        robotEffect.rb=RingBuffer_create(512*10);
+    }
+}
 -(void)testFromAudioController{
     NSLog(@"testFromAudioController");
 }

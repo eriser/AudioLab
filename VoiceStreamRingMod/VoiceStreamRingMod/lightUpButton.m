@@ -153,6 +153,7 @@
         [auTrack activateLoop];
         
     }else{
+        [auTrack deactivateLoop];
         gradLayer.shadowOpacity=0.0;
         gradLayer.colors=disableColorArray;
         gradLayer.locations=disableLocs;

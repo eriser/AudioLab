@@ -144,13 +144,17 @@
 
 -(void)deactivateLoop{
     NSLog(@"timer de-activation");
+    //Stop Writeing and clean the ring buffer
+    [au setDrawingTo:NO];
+    
     if (timer) {
         [timer invalidate];
-        timer = nil;
+        timer=nil;
     }
+    
 }
 -(void)test:(NSTimer *)timer{
-    
+    [au setDrawingTo:YES];
     float *f=[au readBuffer];
     
     data=*f;

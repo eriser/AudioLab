@@ -21,6 +21,7 @@ typedef struct {
     pthread_mutex_t mutex;
     RingBuffer *rb;
     int dataAvailable;
+    bool drawing;
     
 } RobotVoiceStruct;
 
@@ -39,5 +40,5 @@ typedef struct {
 @property int dataLength;
 //Test method
 -(void)testFromAudioController;
-
+-(void)setDrawingTo:(BOOL)isDrawing;
 @end

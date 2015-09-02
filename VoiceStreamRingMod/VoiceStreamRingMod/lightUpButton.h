@@ -11,6 +11,7 @@
 @class AudioTrack;
 @interface AudioTrack
 -(void)activateLoop;
+-(void)deactivateLoop;
 @end
 
 //@class AudioController;

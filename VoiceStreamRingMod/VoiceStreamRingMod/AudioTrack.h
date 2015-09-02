@@ -12,6 +12,7 @@
 @class AudioController;
 @interface AudioController
 -(float*)readBuffer;
+-(void)setDrawingTo:(BOOL)isDrawing;
 @end
 
 @interface AudioTrack : UIView{
@@ -46,4 +47,5 @@
 @property IBOutlet AudioController *au;
 @property float data;
 -(void)activateLoop;
+-(void)deactivateLoop;
 @end
