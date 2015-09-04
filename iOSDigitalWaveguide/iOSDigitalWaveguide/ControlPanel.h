@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "RoundControlSlider.h"
+
+
+///-- Foward declaration of AudioController class
+@class AudioController;
+
+
 @interface ControlPanel : UIImageView{
     ///-- Global Geometry
 
@@ -30,4 +36,8 @@
 @property RoundControlSlider *r1;
 @property RoundControlSlider *r2;
 @property RoundControlSlider *r3;
+
+///-- An AudioController instance will be present at in Runtime
+@property IBOutlet AudioController *controlPanelAU;
+
 @end

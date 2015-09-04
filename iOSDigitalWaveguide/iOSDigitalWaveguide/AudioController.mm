@@ -71,15 +71,16 @@ static OSStatus DigitalWaveGuideCallback( void *							inRefCon,
     //
     //
     //
-//                if (sData->envelope.getState()!=4) {   //if note is not released
-//                    if (sData->drawing) {
-//                        pthread_mutex_lock(&(sData->mutex));
-//                        fdOut=(float)dOut;
-//                        RingBuffer_write(sData->rb, &fdOut, 1);
-//                        pthread_mutex_unlock(&(sData->mutex));
-//                    }
-//    
-//                }
+                //-- Write to ring buffer, AudioTrack will read it when possible
+                if (sData->envelope.getState()!=4) {   //if note is not released
+                    if (sData->drawing) {
+                        pthread_mutex_lock(&(sData->mutex));
+                        fdOut=(float)dOut;
+                        RingBuffer_write(sData->rb, &fdOut, 1);
+                        pthread_mutex_unlock(&(sData->mutex));
+                    }
+    
+                }
     
                 if(sData->envelope.getState() == 0){ // off
                     sData->synthesizer.stopOscillator();

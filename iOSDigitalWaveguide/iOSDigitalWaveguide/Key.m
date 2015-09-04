@@ -7,20 +7,41 @@
 //
 
 #import "Key.h"
+////-- Foward declaration of AudioController
 @class AudioController;
 @interface AudioController
 -(void)play:(short)freqIndex;
 -(void)stop;
 @end
 
+////-- Foward declaration of AudioTrack
+@class AudioTrack;
+@interface AudioTrack
+-(void)activateLoop;
+-(void)deactivateLoop;
+@property NSTimer *timer;
+-(void)resetGraph;
+@end
+
 @class Keyboard;
 @interface Keyboard
 @property AudioController *keyboardAU;
+@property AudioTrack *keyboardAUTrack;
+@end
+
+
+
+
+////-- Foward declaration of Control Panel
+@class ControlPanel;
+@interface ControlPanel
+@property AudioTrack *auTrackControlPanel;
 @end
 
 @implementation Key
 @synthesize identifier,keyColor;
-//@synthesize au;
+
+//@synthesize autra;
 -(instancetype)initWithFrame:(CGRect)frame{
     self=[super initWithFrame:frame];
     if (self) {
@@ -73,11 +94,17 @@
     AudioController *au=[kb keyboardAU];
     [au play:identifier-1];
     
+    AudioTrack *auTrack=[kb keyboardAUTrack];
+    [auTrack activateLoop];
 }
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
     AudioController *au=  [(Keyboard*) [self superview] keyboardAU];
     [au stop];
+    
+    AudioTrack *auTrack=[(Keyboard*) [self superview] keyboardAUTrack];
+    [auTrack deactivateLoop];
+    [auTrack resetGraph];
 }
 
 

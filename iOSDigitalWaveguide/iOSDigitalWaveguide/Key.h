@@ -10,6 +10,9 @@
 
 
 
+
+
+
 @interface Key : UIView{
     ///-- Colors
     UIColor *color;
@@ -28,5 +31,6 @@
 -(void)setTransparentKey;
 -(void)setLightKey;
 -(void)setDarkKey;
+
 
 @end

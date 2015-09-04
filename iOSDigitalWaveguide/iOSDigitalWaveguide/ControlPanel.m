@@ -126,6 +126,11 @@
         [self.layer addSublayer:gradLayer];
         
         
+    
+    
+        
+        
+        
         ///-- Set the Round Control Sliders
         
         

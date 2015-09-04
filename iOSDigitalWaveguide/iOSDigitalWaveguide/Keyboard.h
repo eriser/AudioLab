@@ -8,18 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-
+////-- Foward declaration of AudioController
 @class AudioController;
 
-//
-//@class AudioTrack;
-//@interface AudioTrack
-//-(void)activateLoop;
-//-(void)deactivateLoop;
-//@property NSTimer *timer;
-//-(void)resetGraph;
-//@end
-//
+////-- Foward declaration of AudioTrack
+@class AudioTrack;
+
+
+
+
 
 @interface Keyboard : UIView{
     CAGradientLayer *gradLayer;
@@ -36,5 +33,5 @@
 
 //-- AudioController runtime instance
 @property IBOutlet  AudioController *keyboardAU;
-
+@property IBOutlet AudioTrack *keyboardAUTrack;
 @end
