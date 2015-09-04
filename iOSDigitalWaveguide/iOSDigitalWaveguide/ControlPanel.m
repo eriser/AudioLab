@@ -9,7 +9,7 @@
 #import "ControlPanel.h"
 
 @implementation ControlPanel
-@synthesize r1,r2,r3;
+@synthesize r1,r2,r3,controlPanelAU;
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self=[super initWithCoder:aDecoder];
     if (self) {

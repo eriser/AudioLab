@@ -17,6 +17,25 @@
 #define LINE_WIDTH 5
 
 #pragma mark Private Variables
+
+
+
+///-- Foward declaration of AudioController
+@class AudioController;
+@interface AudioController
+-(void)setPickupPosition:(double)position;
+-(void)setPluckInputPosition:(double)position;
+-(void)setAmp:(double)value;
+-(void)updateDelayLineStructure;
+@end
+
+
+
+@class ControlPanel;
+@interface ControlPanel
+@property AudioController *controlPanelAU;
+@end
+
 @interface RoundControlSlider(){
     CGFloat radius;
     CGFloat W;
@@ -36,7 +55,7 @@
 
 @implementation RoundControlSlider
 @synthesize identifier,parameterName;
-//@synthesize au;
+
 
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self=[super initWithCoder:aDecoder];
@@ -164,35 +183,31 @@
 #pragma mark - UIControl Override -
 
 /** Tracking is started **/
--(BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event{
-    [super beginTrackingWithTouch:touch withEvent:event];
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [super touchesBegan:touches withEvent:event];
     
-    //We need to track continuously
-    return YES;
 }
 
+
 /** Track continuos touch event (like drag) **/
--(BOOL)continueTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event{
-    [super continueTrackingWithTouch:touch withEvent:event];
-    
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    [super touchesMoved:touches withEvent:event];
     //Get touch location
+    UITouch *touch=(UITouch*)[touches anyObject];
     
     CGPoint lastPoint = [touch locationInView:self];
     
     //Use the location to design the Handle
     [self movehandle:lastPoint];
-    
-    //Control value has changed, let's notify that
-    [self sendActionsForControlEvents:UIControlEventValueChanged];
-    
-    return YES;
+  
 }
 
+
 /** Track is finished **/
--(void)endTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event{
-    [super endTrackingWithTouch:touch withEvent:event];
-    
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+    [super touchesEnded:touches withEvent:event];
 }
+
 
 
 #pragma mark Drawing Functions
@@ -240,16 +255,16 @@
         switch (identifier.integerValue) {
             case 1:
                 //printf("%f ", self.decimalVal);
-//                [au setPickupPosition:self.decimalVal];
-//                [au updateDelayLineStructure];
+                [[(ControlPanel*)[self superview] controlPanelAU] setPickupPosition:self.decimalVal];
+                [[(ControlPanel*)[self superview] controlPanelAU] updateDelayLineStructure];                
                 break;
             case 2:
-//                [au setPluckInputPosition:self.decimalVal];
-//                [au updateDelayLineStructure];
+                [[(ControlPanel*)[self superview] controlPanelAU] setPluckInputPosition:self.decimalVal];
+                [[(ControlPanel*)[self superview] controlPanelAU] updateDelayLineStructure];
                 break;
             case 3:
-//                [au setAmp:self.decimalVal];
-//                [au updateDelayLineStructure];
+                [[(ControlPanel*)[self superview] controlPanelAU] setAmp:self.decimalVal];
+                [[(ControlPanel*)[self superview] controlPanelAU] updateDelayLineStructure];
                 break;
             default:
                 break;

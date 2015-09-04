@@ -9,20 +9,14 @@
 #import <UIKit/UIKit.h>
 
 
-///-- Foward declaration of AudioController and related methods
 
-//@class AudioController;
-//@interface AudioController
-//-(void)setPickupPosition:(double)position;
-//-(void)setPluckInputPosition:(double)position;
-//-(void)setAmp:(double)value;
-//-(void)updateDelayLineStructure;
-//@end
 
-@interface RoundControlSlider : UIControl
+
+
+@interface RoundControlSlider : UIView
 
 //-- AudioController runtime instance (Communication with algorithm input variables)
-//@property IBOutlet AudioController *au;
+
 
 
 //-- User Defined Runtime Attributes

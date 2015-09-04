@@ -6,8 +6,6 @@
 //  Copyright (c) 2015 Ness. All rights reserved.
 //
 
-#ifndef __Synth_Osc2__FIFO__
-#define __Synth_Osc2__FIFO__
 
 #include <stdio.h>
 
@@ -83,4 +81,4 @@ public:
     int size;
 };
 
-#endif /* defined(__Synth_Osc2__FIFO__) */
+
