@@ -14,6 +14,19 @@
 		CC913EE91B98B053008F8B5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC913EE81B98B053008F8B5C /* Images.xcassets */; };
 		CC913EEC1B98B053008F8B5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC913EEA1B98B053008F8B5C /* LaunchScreen.xib */; };
 		CC913EF81B98B053008F8B5C /* iOSDigitalWaveguideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC913EF71B98B053008F8B5C /* iOSDigitalWaveguideTests.m */; };
+		CC913F031B98ED9E008F8B5C /* ControlPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC913F021B98ED9E008F8B5C /* ControlPanel.m */; };
+		CC913F071B98FE29008F8B5C /* RoundControlSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC913F061B98FE29008F8B5C /* RoundControlSlider.m */; };
+		CC913F0A1B990D47008F8B5C /* Key.m in Sources */ = {isa = PBXBuildFile; fileRef = CC913F091B990D47008F8B5C /* Key.m */; };
+		CC913F0D1B991070008F8B5C /* Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = CC913F0C1B991070008F8B5C /* Keyboard.m */; };
+		CC913F101B99155F008F8B5C /* AudioController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CC913F0F1B99155F008F8B5C /* AudioController.mm */; };
+		CC913F131B9915DA008F8B5C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC913F121B9915DA008F8B5C /* AVFoundation.framework */; };
+		CC913F151B9915DF008F8B5C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC913F141B9915DF008F8B5C /* AudioToolbox.framework */; };
+		CC913F181B9937EC008F8B5C /* RingBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = CC913F161B9937EC008F8B5C /* RingBuffer.c */; };
+		CC913F211B993B0E008F8B5C /* DigitalWaveGuide.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC913F191B993B0E008F8B5C /* DigitalWaveGuide.cpp */; };
+		CC913F221B993B0E008F8B5C /* FIFO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC913F1B1B993B0E008F8B5C /* FIFO.cpp */; };
+		CC913F231B993B0E008F8B5C /* Oscillator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC913F1D1B993B0E008F8B5C /* Oscillator.cpp */; };
+		CC913F271B993DC8008F8B5C /* EnvelopeGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC913F251B993DC8008F8B5C /* EnvelopeGenerator.cpp */; };
+		CC913F2A1B995065008F8B5C /* AudioTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = CC913F291B995065008F8B5C /* AudioTrack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +53,32 @@
 		CC913EF11B98B053008F8B5C /* iOSDigitalWaveguideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSDigitalWaveguideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC913EF61B98B053008F8B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC913EF71B98B053008F8B5C /* iOSDigitalWaveguideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSDigitalWaveguideTests.m; sourceTree = "<group>"; };
+		CC913F011B98ED9E008F8B5C /* ControlPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlPanel.h; sourceTree = "<group>"; };
+		CC913F021B98ED9E008F8B5C /* ControlPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlPanel.m; sourceTree = "<group>"; };
+		CC913F051B98FE29008F8B5C /* RoundControlSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundControlSlider.h; sourceTree = "<group>"; };
+		CC913F061B98FE29008F8B5C /* RoundControlSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundControlSlider.m; sourceTree = "<group>"; };
+		CC913F081B990D47008F8B5C /* Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Key.h; sourceTree = "<group>"; };
+		CC913F091B990D47008F8B5C /* Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Key.m; sourceTree = "<group>"; };
+		CC913F0B1B991070008F8B5C /* Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keyboard.h; sourceTree = "<group>"; };
+		CC913F0C1B991070008F8B5C /* Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keyboard.m; sourceTree = "<group>"; };
+		CC913F0E1B99155F008F8B5C /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
+		CC913F0F1B99155F008F8B5C /* AudioController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioController.mm; sourceTree = "<group>"; };
+		CC913F121B9915DA008F8B5C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CC913F141B9915DF008F8B5C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CC913F161B9937EC008F8B5C /* RingBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RingBuffer.c; sourceTree = "<group>"; };
+		CC913F171B9937EC008F8B5C /* RingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingBuffer.h; sourceTree = "<group>"; };
+		CC913F191B993B0E008F8B5C /* DigitalWaveGuide.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DigitalWaveGuide.cpp; sourceTree = "<group>"; };
+		CC913F1A1B993B0E008F8B5C /* DigitalWaveGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitalWaveGuide.h; sourceTree = "<group>"; };
+		CC913F1B1B993B0E008F8B5C /* FIFO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FIFO.cpp; sourceTree = "<group>"; };
+		CC913F1C1B993B0E008F8B5C /* FIFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIFO.h; sourceTree = "<group>"; };
+		CC913F1D1B993B0E008F8B5C /* Oscillator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Oscillator.cpp; sourceTree = "<group>"; };
+		CC913F1E1B993B0E008F8B5C /* Oscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Oscillator.h; sourceTree = "<group>"; };
+		CC913F1F1B993B0E008F8B5C /* pluginconstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pluginconstants.h; sourceTree = "<group>"; };
+		CC913F201B993B0E008F8B5C /* synthfunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = synthfunctions.h; sourceTree = "<group>"; };
+		CC913F251B993DC8008F8B5C /* EnvelopeGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnvelopeGenerator.cpp; sourceTree = "<group>"; };
+		CC913F261B993DC8008F8B5C /* EnvelopeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvelopeGenerator.h; sourceTree = "<group>"; };
+		CC913F281B995065008F8B5C /* AudioTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioTrack.h; sourceTree = "<group>"; };
+		CC913F291B995065008F8B5C /* AudioTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioTrack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC913F151B9915DF008F8B5C /* AudioToolbox.framework in Frameworks */,
+				CC913F131B9915DA008F8B5C /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +104,8 @@
 		CC913ECF1B98B053008F8B5C = {
 			isa = PBXGroup;
 			children = (
+				CC913F141B9915DF008F8B5C /* AudioToolbox.framework */,
+				CC913F121B9915DA008F8B5C /* AVFoundation.framework */,
 				CC913EDA1B98B053008F8B5C /* iOSDigitalWaveguide */,
 				CC913EF41B98B053008F8B5C /* iOSDigitalWaveguideTests */,
 				CC913ED91B98B053008F8B5C /* Products */,
@@ -85,6 +128,8 @@
 				CC913EE01B98B053008F8B5C /* AppDelegate.m */,
 				CC913EE21B98B053008F8B5C /* ViewController.h */,
 				CC913EE31B98B053008F8B5C /* ViewController.m */,
+				CC913F111B99156B008F8B5C /* Audio */,
+				CC913F041B98F03E008F8B5C /* UI */,
 				CC913EE51B98B053008F8B5C /* Main.storyboard */,
 				CC913EE81B98B053008F8B5C /* Images.xcassets */,
 				CC913EEA1B98B053008F8B5C /* LaunchScreen.xib */,
@@ -117,6 +162,52 @@
 				CC913EF61B98B053008F8B5C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC913F041B98F03E008F8B5C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CC913F011B98ED9E008F8B5C /* ControlPanel.h */,
+				CC913F021B98ED9E008F8B5C /* ControlPanel.m */,
+				CC913F051B98FE29008F8B5C /* RoundControlSlider.h */,
+				CC913F061B98FE29008F8B5C /* RoundControlSlider.m */,
+				CC913F081B990D47008F8B5C /* Key.h */,
+				CC913F091B990D47008F8B5C /* Key.m */,
+				CC913F0B1B991070008F8B5C /* Keyboard.h */,
+				CC913F0C1B991070008F8B5C /* Keyboard.m */,
+				CC913F281B995065008F8B5C /* AudioTrack.h */,
+				CC913F291B995065008F8B5C /* AudioTrack.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		CC913F111B99156B008F8B5C /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				CC913F0E1B99155F008F8B5C /* AudioController.h */,
+				CC913F0F1B99155F008F8B5C /* AudioController.mm */,
+				CC913F191B993B0E008F8B5C /* DigitalWaveGuide.cpp */,
+				CC913F1A1B993B0E008F8B5C /* DigitalWaveGuide.h */,
+				CC913F1D1B993B0E008F8B5C /* Oscillator.cpp */,
+				CC913F1E1B993B0E008F8B5C /* Oscillator.h */,
+				CC913F251B993DC8008F8B5C /* EnvelopeGenerator.cpp */,
+				CC913F261B993DC8008F8B5C /* EnvelopeGenerator.h */,
+				CC913F241B993B63008F8B5C /* Utilities */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		CC913F241B993B63008F8B5C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CC913F1F1B993B0E008F8B5C /* pluginconstants.h */,
+				CC913F201B993B0E008F8B5C /* synthfunctions.h */,
+				CC913F161B9937EC008F8B5C /* RingBuffer.c */,
+				CC913F171B9937EC008F8B5C /* RingBuffer.h */,
+				CC913F1B1B993B0E008F8B5C /* FIFO.cpp */,
+				CC913F1C1B993B0E008F8B5C /* FIFO.h */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +310,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC913F181B9937EC008F8B5C /* RingBuffer.c in Sources */,
 				CC913EE41B98B053008F8B5C /* ViewController.m in Sources */,
+				CC913F071B98FE29008F8B5C /* RoundControlSlider.m in Sources */,
+				CC913F221B993B0E008F8B5C /* FIFO.cpp in Sources */,
+				CC913F2A1B995065008F8B5C /* AudioTrack.m in Sources */,
+				CC913F101B99155F008F8B5C /* AudioController.mm in Sources */,
 				CC913EE11B98B053008F8B5C /* AppDelegate.m in Sources */,
+				CC913F0A1B990D47008F8B5C /* Key.m in Sources */,
+				CC913F0D1B991070008F8B5C /* Keyboard.m in Sources */,
+				CC913F031B98ED9E008F8B5C /* ControlPanel.m in Sources */,
+				CC913F211B993B0E008F8B5C /* DigitalWaveGuide.cpp in Sources */,
 				CC913EDE1B98B053008F8B5C /* main.m in Sources */,
+				CC913F271B993DC8008F8B5C /* EnvelopeGenerator.cpp in Sources */,
+				CC913F231B993B0E008F8B5C /* Oscillator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
