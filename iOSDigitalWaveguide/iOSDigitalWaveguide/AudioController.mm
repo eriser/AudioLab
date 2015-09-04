@@ -10,7 +10,9 @@
 
 #include "DigitalWaveGuide.h"
 #include "EnvelopeGenerator.h"
-
+#include "Distortion.h"
+#include "Delay.h"
+#include "VAOnePoleFilter.h"
 #include "RingBuffer.c"
 #include <pthread.h>
 
@@ -25,7 +27,13 @@ typedef struct _waveGuide{
     //-- C++ Audio Elements
     DigitalWaveGuide   synthesizer;            //implements digital waveguide algorithm
     CEnvelopeGenerator envelope;
-    
+    Distortion distortion;
+    Delay delay;
+    CVAOnePoleFilter filter;
+    //-- Audio Effect Locks
+    bool b_distortion;
+    bool b_delay;
+    bool b_filter;
     //-- Audio Track Elements
     RingBuffer *rb;
     pthread_mutex_t mutex;
@@ -44,7 +52,7 @@ static OSStatus DigitalWaveGuideCallback( void *							inRefCon,
     WaveGuide *sData=(WaveGuide *)inRefCon;
     double dOut=0.0;
     float fdOut=0.0;
-    double dEnv=0.0;
+    //double dEnv=0.0;
         for (int frame = 0; frame < inNumberFrames; ++frame)
         {
             Float32 *data = (Float32*)ioData->mBuffers[0].mData;
@@ -52,19 +60,19 @@ static OSStatus DigitalWaveGuideCallback( void *							inRefCon,
     //
                 dOut=(Float32)sData->synthesizer.doOscillate();
     //
-    //            //Distortion
-    //            if(sData->distortionFX){
-    //                dOut=sData->m_Distortion.doDistortion(dOut);
-    //            }
+                //Distortion
+                if(sData->b_distortion){
+                    dOut=sData->distortion.doDistortion(dOut);
+                }
     //
     //
-    //            //Reverb
-    //            if (sData->delayFX)
-    //                dOut=sData->m_rev.doSimpleReverb(dOut);
+                //Delay
+                if (sData->b_delay)
+                    dOut=sData->delay.doSimpleReverb(dOut);
     //
     //
-    //            if(sData->filterFX)
-    //                dOut=sData->m_filter.doFilter(dOut);
+                if(sData->b_filter)
+                    dOut=sData->filter.doFilter(dOut);
     //
                 double dEGOut = sData->envelope.doEnvelope();
                 dOut *=dEGOut;
@@ -131,25 +139,25 @@ static OSStatus DigitalWaveGuideCallback( void *							inRefCon,
     waveguide.synthesizer.pickup=0.8;
     waveguide.synthesizer.duration=12.0;
     waveguide.synthesizer.m_bNoteOn=false;
+    waveguide.synthesizer.update();
     
     //-- Envelope Generator
     waveguide.envelope.m_uEGMode=CEnvelopeGenerator::analog;
     
     //-- Audio Effects
-    //    waveguide.m_filter.m_uFilterType=CFilter::LPF1;
-    //    waveguide.m_filter.setSampleRate(44100);
-    //    waveguide.m_filter.m_dFcControl=300;
-    //    waveguide.m_filter.m_dQControl=1.0;
-    //    waveguide.m_filter.update();
+    waveguide.filter.m_uFilterType=CFilter::HPF1;
+    waveguide.filter.setSampleRate(44100);
+    waveguide.filter.m_dFcControl=500;
+    waveguide.filter.m_dQControl=1.0;
+    waveguide.filter.update();
 
-    //    waveguide.synthesizer.update();
-    //
-    //    //-- Effects
-    //    waveguide.distortionFX=false;
-    //    waveguide.delayFX=false;
-    //    waveguide.filterFX=false;
 
-    //    //-- Filter
+    
+    //-- Effects Locks
+    waveguide.b_distortion=false;
+    waveguide.b_delay=false;
+    waveguide.b_filter=false;
+
     
     //-- Audio Track
     waveguide.rb=RingBuffer_create(512*10);
@@ -316,6 +324,29 @@ static OSStatus DigitalWaveGuideCallback( void *							inRefCon,
     //printf("pick:%f  pickup:%f amp:%f \n",pick, pickup, amplitude);
 }
 
+#pragma mark Audio Effects
+
+-(void)setDistortionON{
+    waveguide.b_distortion=true;
+}
+-(void)setDistortionOFF{
+    waveguide.b_distortion=false;
+}
+
+
+-(void)setDelayON{
+    waveguide.b_delay=true;
+}
+-(void)setDelayOFF{
+    waveguide.b_delay=false;
+}
+
+-(void)setFilterON{
+    waveguide.b_filter=true;
+}
+-(void)setFilterOFF{
+    waveguide.b_filter=false;
+}
 
 #pragma mark Audio Track
 -(float *)readBuffer{

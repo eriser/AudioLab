@@ -252,11 +252,12 @@
         value=(self.angle>=315 && self.angle<360)?-(315-self.angle)*100/269:(self.angle+45)*100/269;
         self.decimalVal=(double)value/100.0;
         
+    // Update the algorithm input variables
         switch (identifier.integerValue) {
             case 1:
                 //printf("%f ", self.decimalVal);
                 [[(ControlPanel*)[self superview] controlPanelAU] setPickupPosition:self.decimalVal];
-                [[(ControlPanel*)[self superview] controlPanelAU] updateDelayLineStructure];                
+                [[(ControlPanel*)[self superview] controlPanelAU] updateDelayLineStructure];
                 break;
             case 2:
                 [[(ControlPanel*)[self superview] controlPanelAU] setPluckInputPosition:self.decimalVal];
@@ -271,8 +272,6 @@
         }
         
         textField.text =  [NSString stringWithFormat:@"%d", value];
-        //printf("%f ",value/100.0);
-        //Redraw
         [self setNeedsDisplay];
     }
     
