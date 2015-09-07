@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC236AF61B9DFDD700B42D84 /* FXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CC236AF51B9DFDD700B42D84 /* FXButton.m */; };
+		CC236AFA1B9E033300B42D84 /* LFOModeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CC236AF91B9E033300B42D84 /* LFOModeButton.m */; };
 		CC9A2ED31B9A2B32000D2225 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2ED21B9A2B32000D2225 /* main.m */; };
 		CC9A2ED61B9A2B32000D2225 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2ED51B9A2B32000D2225 /* AppDelegate.m */; };
 		CC9A2ED91B9A2B32000D2225 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2ED81B9A2B32000D2225 /* ViewController.m */; };
@@ -14,7 +16,27 @@
 		CC9A2EDE1B9A2B32000D2225 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9A2EDD1B9A2B32000D2225 /* Images.xcassets */; };
 		CC9A2EE11B9A2B32000D2225 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC9A2EDF1B9A2B32000D2225 /* LaunchScreen.xib */; };
 		CC9A2EED1B9A2B32000D2225 /* AudioSynthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2EEC1B9A2B32000D2225 /* AudioSynthTests.m */; };
-		CC9A2EF81B9A35A4000D2225 /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2EF71B9A35A4000D2225 /* AudioController.m */; };
+		CC9A2EF81B9A35A4000D2225 /* AudioController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2EF71B9A35A4000D2225 /* AudioController.mm */; };
+		CC9A2EFA1B9A36A3000D2225 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9A2EF91B9A36A3000D2225 /* AudioToolbox.framework */; };
+		CC9A2EFC1B9A36A9000D2225 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9A2EFB1B9A36A9000D2225 /* AVFoundation.framework */; };
+		CC9A2F041B9A36E7000D2225 /* CQBLimitedOscillator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2EFE1B9A36E7000D2225 /* CQBLimitedOscillator.cpp */; };
+		CC9A2F051B9A36E7000D2225 /* LFO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F001B9A36E7000D2225 /* LFO.cpp */; };
+		CC9A2F061B9A36E7000D2225 /* Oscillator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F021B9A36E7000D2225 /* Oscillator.cpp */; };
+		CC9A2F0D1B9A3970000D2225 /* EnvelopeGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F0B1B9A3970000D2225 /* EnvelopeGenerator.cpp */; };
+		CC9A2F131B9A39A6000D2225 /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F0F1B9A39A6000D2225 /* Filter.cpp */; };
+		CC9A2F141B9A39A6000D2225 /* VAOnePoleFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F111B9A39A6000D2225 /* VAOnePoleFilter.cpp */; };
+		CC9A2F1D1B9A4856000D2225 /* Distortion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F191B9A4856000D2225 /* Distortion.cpp */; };
+		CC9A2F1E1B9A4856000D2225 /* FIFO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F1B1B9A4856000D2225 /* FIFO.cpp */; };
+		CC9A2F221B9A488C000D2225 /* Delay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F201B9A488C000D2225 /* Delay.cpp */; };
+		CC9A2F291B9A5BD7000D2225 /* OscillatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F241B9A5BD7000D2225 /* OscillatorController.m */; };
+		CC9A2F2A1B9A5BD7000D2225 /* RoundSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F261B9A5BD7000D2225 /* RoundSlider.m */; };
+		CC9A2F2B1B9A5BD7000D2225 /* WaveShape.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F281B9A5BD7000D2225 /* WaveShape.m */; };
+		CC9A2F321B9A5F79000D2225 /* FilterSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F2F1B9A5F79000D2225 /* FilterSelector.m */; };
+		CC9A2F331B9A5F79000D2225 /* roundControlSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F311B9A5F79000D2225 /* roundControlSlider.m */; };
+		CC9A2F3B1B9A604C000D2225 /* Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F361B9A604C000D2225 /* Keyboard.m */; };
+		CC9A2F3C1B9A604C000D2225 /* KeyLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F381B9A604C000D2225 /* KeyLayer.m */; };
+		CC9A2F3D1B9A604C000D2225 /* KeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F3A1B9A604C000D2225 /* KeyView.m */; };
+		CC9A2F411B9A60D6000D2225 /* CurveController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9A2F401B9A60D6000D2225 /* CurveController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC236AF41B9DFDD700B42D84 /* FXButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXButton.h; sourceTree = "<group>"; };
+		CC236AF51B9DFDD700B42D84 /* FXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXButton.m; sourceTree = "<group>"; };
+		CC236AF81B9E033300B42D84 /* LFOModeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFOModeButton.h; sourceTree = "<group>"; };
+		CC236AF91B9E033300B42D84 /* LFOModeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFOModeButton.m; sourceTree = "<group>"; };
 		CC9A2ECD1B9A2B32000D2225 /* AudioSynth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioSynth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9A2ED11B9A2B32000D2225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC9A2ED21B9A2B32000D2225 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,7 +68,47 @@
 		CC9A2EEB1B9A2B32000D2225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC9A2EEC1B9A2B32000D2225 /* AudioSynthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioSynthTests.m; sourceTree = "<group>"; };
 		CC9A2EF61B9A35A4000D2225 /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
-		CC9A2EF71B9A35A4000D2225 /* AudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioController.m; sourceTree = "<group>"; };
+		CC9A2EF71B9A35A4000D2225 /* AudioController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioController.mm; sourceTree = "<group>"; };
+		CC9A2EF91B9A36A3000D2225 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CC9A2EFB1B9A36A9000D2225 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CC9A2EFE1B9A36E7000D2225 /* CQBLimitedOscillator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CQBLimitedOscillator.cpp; sourceTree = "<group>"; };
+		CC9A2EFF1B9A36E7000D2225 /* CQBLimitedOscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQBLimitedOscillator.h; sourceTree = "<group>"; };
+		CC9A2F001B9A36E7000D2225 /* LFO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LFO.cpp; sourceTree = "<group>"; };
+		CC9A2F011B9A36E7000D2225 /* LFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFO.h; sourceTree = "<group>"; };
+		CC9A2F021B9A36E7000D2225 /* Oscillator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Oscillator.cpp; sourceTree = "<group>"; };
+		CC9A2F031B9A36E7000D2225 /* Oscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Oscillator.h; sourceTree = "<group>"; };
+		CC9A2F071B9A371E000D2225 /* pluginconstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pluginconstants.h; sourceTree = "<group>"; };
+		CC9A2F081B9A371E000D2225 /* synthfunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = synthfunctions.h; sourceTree = "<group>"; };
+		CC9A2F0B1B9A3970000D2225 /* EnvelopeGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnvelopeGenerator.cpp; sourceTree = "<group>"; };
+		CC9A2F0C1B9A3970000D2225 /* EnvelopeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvelopeGenerator.h; sourceTree = "<group>"; };
+		CC9A2F0F1B9A39A6000D2225 /* Filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Filter.cpp; sourceTree = "<group>"; };
+		CC9A2F101B9A39A6000D2225 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
+		CC9A2F111B9A39A6000D2225 /* VAOnePoleFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VAOnePoleFilter.cpp; sourceTree = "<group>"; };
+		CC9A2F121B9A39A6000D2225 /* VAOnePoleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAOnePoleFilter.h; sourceTree = "<group>"; };
+		CC9A2F191B9A4856000D2225 /* Distortion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Distortion.cpp; sourceTree = "<group>"; };
+		CC9A2F1A1B9A4856000D2225 /* Distortion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Distortion.h; sourceTree = "<group>"; };
+		CC9A2F1B1B9A4856000D2225 /* FIFO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FIFO.cpp; sourceTree = "<group>"; };
+		CC9A2F1C1B9A4856000D2225 /* FIFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIFO.h; sourceTree = "<group>"; };
+		CC9A2F201B9A488C000D2225 /* Delay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Delay.cpp; sourceTree = "<group>"; };
+		CC9A2F211B9A488C000D2225 /* Delay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Delay.h; sourceTree = "<group>"; };
+		CC9A2F231B9A5BD7000D2225 /* OscillatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscillatorController.h; sourceTree = "<group>"; };
+		CC9A2F241B9A5BD7000D2225 /* OscillatorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OscillatorController.m; sourceTree = "<group>"; };
+		CC9A2F251B9A5BD7000D2225 /* RoundSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundSlider.h; sourceTree = "<group>"; };
+		CC9A2F261B9A5BD7000D2225 /* RoundSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundSlider.m; sourceTree = "<group>"; };
+		CC9A2F271B9A5BD7000D2225 /* WaveShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveShape.h; sourceTree = "<group>"; };
+		CC9A2F281B9A5BD7000D2225 /* WaveShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveShape.m; sourceTree = "<group>"; };
+		CC9A2F2E1B9A5F79000D2225 /* FilterSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterSelector.h; sourceTree = "<group>"; };
+		CC9A2F2F1B9A5F79000D2225 /* FilterSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterSelector.m; sourceTree = "<group>"; };
+		CC9A2F301B9A5F79000D2225 /* roundControlSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = roundControlSlider.h; sourceTree = "<group>"; };
+		CC9A2F311B9A5F79000D2225 /* roundControlSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = roundControlSlider.m; sourceTree = "<group>"; };
+		CC9A2F351B9A604C000D2225 /* Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keyboard.h; sourceTree = "<group>"; };
+		CC9A2F361B9A604C000D2225 /* Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keyboard.m; sourceTree = "<group>"; };
+		CC9A2F371B9A604C000D2225 /* KeyLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyLayer.h; sourceTree = "<group>"; };
+		CC9A2F381B9A604C000D2225 /* KeyLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyLayer.m; sourceTree = "<group>"; };
+		CC9A2F391B9A604C000D2225 /* KeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyView.h; sourceTree = "<group>"; };
+		CC9A2F3A1B9A604C000D2225 /* KeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyView.m; sourceTree = "<group>"; };
+		CC9A2F3F1B9A60D6000D2225 /* CurveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurveController.h; sourceTree = "<group>"; };
+		CC9A2F401B9A60D6000D2225 /* CurveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurveController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +116,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9A2EFC1B9A36A9000D2225 /* AVFoundation.framework in Frameworks */,
+				CC9A2EFA1B9A36A3000D2225 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +131,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC236AF71B9DFDDD00B42D84 /* FXButtons */ = {
+			isa = PBXGroup;
+			children = (
+				CC236AF41B9DFDD700B42D84 /* FXButton.h */,
+				CC236AF51B9DFDD700B42D84 /* FXButton.m */,
+			);
+			name = FXButtons;
+			sourceTree = "<group>";
+		};
 		CC9A2EC41B9A2B32000D2225 = {
 			isa = PBXGroup;
 			children = (
+				CC9A2EFB1B9A36A9000D2225 /* AVFoundation.framework */,
+				CC9A2EF91B9A36A3000D2225 /* AudioToolbox.framework */,
 				CC9A2ECF1B9A2B32000D2225 /* AudioSynth */,
 				CC9A2EE91B9A2B32000D2225 /* AudioSynthTests */,
 				CC9A2ECE1B9A2B32000D2225 /* Products */,
@@ -88,8 +167,8 @@
 				CC9A2ED51B9A2B32000D2225 /* AppDelegate.m */,
 				CC9A2ED71B9A2B32000D2225 /* ViewController.h */,
 				CC9A2ED81B9A2B32000D2225 /* ViewController.m */,
-				CC9A2EF61B9A35A4000D2225 /* AudioController.h */,
-				CC9A2EF71B9A35A4000D2225 /* AudioController.m */,
+				CC9A2F2C1B9A5BE1000D2225 /* UserInterface */,
+				CC9A2EFD1B9A36B4000D2225 /* Audio */,
 				CC9A2EDA1B9A2B32000D2225 /* Main.storyboard */,
 				CC9A2EDD1B9A2B32000D2225 /* Images.xcassets */,
 				CC9A2EDF1B9A2B32000D2225 /* LaunchScreen.xib */,
@@ -122,6 +201,135 @@
 				CC9A2EEB1B9A2B32000D2225 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC9A2EFD1B9A36B4000D2225 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				CC9A2EF61B9A35A4000D2225 /* AudioController.h */,
+				CC9A2EF71B9A35A4000D2225 /* AudioController.mm */,
+				CC9A2F1F1B9A4864000D2225 /* FXs */,
+				CC9A2F151B9A39B0000D2225 /* Filters */,
+				CC9A2F0E1B9A397D000D2225 /* Envelope */,
+				CC9A2F0A1B9A3737000D2225 /* Oscillators */,
+				CC9A2F091B9A3728000D2225 /* Utilities */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		CC9A2F091B9A3728000D2225 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CC9A2F071B9A371E000D2225 /* pluginconstants.h */,
+				CC9A2F081B9A371E000D2225 /* synthfunctions.h */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		CC9A2F0A1B9A3737000D2225 /* Oscillators */ = {
+			isa = PBXGroup;
+			children = (
+				CC9A2F021B9A36E7000D2225 /* Oscillator.cpp */,
+				CC9A2F031B9A36E7000D2225 /* Oscillator.h */,
+				CC9A2EFE1B9A36E7000D2225 /* CQBLimitedOscillator.cpp */,
+				CC9A2EFF1B9A36E7000D2225 /* CQBLimitedOscillator.h */,
+				CC9A2F001B9A36E7000D2225 /* LFO.cpp */,
+				CC9A2F011B9A36E7000D2225 /* LFO.h */,
+			);
+			name = Oscillators;
+			sourceTree = "<group>";
+		};
+		CC9A2F0E1B9A397D000D2225 /* Envelope */ = {
+			isa = PBXGroup;
+			children = (
+				CC9A2F0B1B9A3970000D2225 /* EnvelopeGenerator.cpp */,
+				CC9A2F0C1B9A3970000D2225 /* EnvelopeGenerator.h */,
+			);
+			name = Envelope;
+			sourceTree = "<group>";
+		};
+		CC9A2F151B9A39B0000D2225 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				CC9A2F0F1B9A39A6000D2225 /* Filter.cpp */,
+				CC9A2F101B9A39A6000D2225 /* Filter.h */,
+				CC9A2F111B9A39A6000D2225 /* VAOnePoleFilter.cpp */,
+				CC9A2F121B9A39A6000D2225 /* VAOnePoleFilter.h */,
+			);
+			name = Filters;
+			sourceTree = "<group>";
+		};
+		CC9A2F1F1B9A4864000D2225 /* FXs */ = {
+			isa = PBXGroup;
+			children = (
+				CC9A2F201B9A488C000D2225 /* Delay.cpp */,
+				CC9A2F211B9A488C000D2225 /* Delay.h */,
+				CC9A2F191B9A4856000D2225 /* Distortion.cpp */,
+				CC9A2F1A1B9A4856000D2225 /* Distortion.h */,
+				CC9A2F1B1B9A4856000D2225 /* FIFO.cpp */,
+				CC9A2F1C1B9A4856000D2225 /* FIFO.h */,
+			);
+			name = FXs;
+			sourceTree = "<group>";
+		};
+		CC9A2F2C1B9A5BE1000D2225 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				CC236AF71B9DFDDD00B42D84 /* FXButtons */,
+				CC9A2F421B9A60E3000D2225 /* Envelopes */,
+				CC9A2F3E1B9A6052000D2225 /* Keyboard */,
+				CC9A2F341B9A5F9B000D2225 /* Filter Selector */,
+				CC9A2F2D1B9A5BFB000D2225 /* Oscillators */,
+			);
+			name = UserInterface;
+			sourceTree = "<group>";
+		};
+		CC9A2F2D1B9A5BFB000D2225 /* Oscillators */ = {
+			isa = PBXGroup;
+			children = (
+				CC236AF81B9E033300B42D84 /* LFOModeButton.h */,
+				CC236AF91B9E033300B42D84 /* LFOModeButton.m */,
+				CC9A2F231B9A5BD7000D2225 /* OscillatorController.h */,
+				CC9A2F241B9A5BD7000D2225 /* OscillatorController.m */,
+				CC9A2F251B9A5BD7000D2225 /* RoundSlider.h */,
+				CC9A2F261B9A5BD7000D2225 /* RoundSlider.m */,
+				CC9A2F271B9A5BD7000D2225 /* WaveShape.h */,
+				CC9A2F281B9A5BD7000D2225 /* WaveShape.m */,
+			);
+			name = Oscillators;
+			sourceTree = "<group>";
+		};
+		CC9A2F341B9A5F9B000D2225 /* Filter Selector */ = {
+			isa = PBXGroup;
+			children = (
+				CC9A2F2E1B9A5F79000D2225 /* FilterSelector.h */,
+				CC9A2F2F1B9A5F79000D2225 /* FilterSelector.m */,
+				CC9A2F301B9A5F79000D2225 /* roundControlSlider.h */,
+				CC9A2F311B9A5F79000D2225 /* roundControlSlider.m */,
+			);
+			name = "Filter Selector";
+			sourceTree = "<group>";
+		};
+		CC9A2F3E1B9A6052000D2225 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CC9A2F351B9A604C000D2225 /* Keyboard.h */,
+				CC9A2F361B9A604C000D2225 /* Keyboard.m */,
+				CC9A2F391B9A604C000D2225 /* KeyView.h */,
+				CC9A2F3A1B9A604C000D2225 /* KeyView.m */,
+				CC9A2F371B9A604C000D2225 /* KeyLayer.h */,
+				CC9A2F381B9A604C000D2225 /* KeyLayer.m */,
+			);
+			name = Keyboard;
+			sourceTree = "<group>";
+		};
+		CC9A2F421B9A60E3000D2225 /* Envelopes */ = {
+			isa = PBXGroup;
+			children = (
+				CC9A2F3F1B9A60D6000D2225 /* CurveController.h */,
+				CC9A2F401B9A60D6000D2225 /* CurveController.m */,
+			);
+			name = Envelopes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,9 +433,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC9A2ED91B9A2B32000D2225 /* ViewController.m in Sources */,
+				CC9A2F3B1B9A604C000D2225 /* Keyboard.m in Sources */,
 				CC9A2ED61B9A2B32000D2225 /* AppDelegate.m in Sources */,
-				CC9A2EF81B9A35A4000D2225 /* AudioController.m in Sources */,
+				CC9A2F411B9A60D6000D2225 /* CurveController.m in Sources */,
+				CC9A2F041B9A36E7000D2225 /* CQBLimitedOscillator.cpp in Sources */,
+				CC236AF61B9DFDD700B42D84 /* FXButton.m in Sources */,
+				CC9A2F291B9A5BD7000D2225 /* OscillatorController.m in Sources */,
+				CC9A2F0D1B9A3970000D2225 /* EnvelopeGenerator.cpp in Sources */,
+				CC9A2F131B9A39A6000D2225 /* Filter.cpp in Sources */,
+				CC9A2F1D1B9A4856000D2225 /* Distortion.cpp in Sources */,
+				CC9A2F3D1B9A604C000D2225 /* KeyView.m in Sources */,
+				CC9A2F2A1B9A5BD7000D2225 /* RoundSlider.m in Sources */,
+				CC9A2F051B9A36E7000D2225 /* LFO.cpp in Sources */,
+				CC9A2F321B9A5F79000D2225 /* FilterSelector.m in Sources */,
+				CC9A2EF81B9A35A4000D2225 /* AudioController.mm in Sources */,
+				CC9A2F2B1B9A5BD7000D2225 /* WaveShape.m in Sources */,
+				CC9A2F221B9A488C000D2225 /* Delay.cpp in Sources */,
+				CC9A2F141B9A39A6000D2225 /* VAOnePoleFilter.cpp in Sources */,
+				CC9A2F1E1B9A4856000D2225 /* FIFO.cpp in Sources */,
+				CC9A2F331B9A5F79000D2225 /* roundControlSlider.m in Sources */,
+				CC236AFA1B9E033300B42D84 /* LFOModeButton.m in Sources */,
+				CC9A2F061B9A36E7000D2225 /* Oscillator.cpp in Sources */,
 				CC9A2ED31B9A2B32000D2225 /* main.m in Sources */,
+				CC9A2F3C1B9A604C000D2225 /* KeyLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +652,7 @@
 				CC9A2EF21B9A2B32000D2225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC9A2EF31B9A2B32000D2225 /* Build configuration list for PBXNativeTarget "AudioSynthTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +661,7 @@
 				CC9A2EF51B9A2B32000D2225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
