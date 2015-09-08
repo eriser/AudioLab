@@ -31,7 +31,7 @@
         H=self.bounds.size.height;
         
         NSLog(@"flag");
-        self.backgroundColor=[UIColor orangeColor];
+        self.backgroundColor=[UIColor clearColor];
         [self setTwoOctaves];
     }
     return self;
