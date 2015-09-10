@@ -30,6 +30,27 @@
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7gw-aj-Yvp" customClass="OscillatorController">
                                 <rect key="frame" x="638" y="10" width="300" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6n9-fG-ASE" customClass="LFOModeButton">
+                                        <rect key="frame" x="251" y="112" width="135" height="75"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="message" value="SYNC MODE"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorState1">
+                                                <color key="value" red="0.0" green="0.88235300780000003" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorState2">
+                                                <color key="value" red="0.88627457620000005" green="0.90588241820000004" blue="0.43529415129999999" alpha="1" colorSpace="deviceRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="identifier">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="AULFOModeButton" destination="TcO-dk-gSy" id="Jgx-XH-jls"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="OscNumber">
@@ -84,25 +105,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="AULFOModeButton" destination="TcO-dk-gSy" id="7XQ-zj-JNJ"/>
-                                </connections>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6n9-fG-ASE" customClass="LFOModeButton">
-                                <rect key="frame" x="889" y="134" width="135" height="75"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="message" value="SYNC MODE"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="colorState1">
-                                        <color key="value" red="0.0" green="0.88235300780000003" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="colorState2">
-                                        <color key="value" red="0.88627457620000005" green="0.90588241820000004" blue="0.43529415129999999" alpha="1" colorSpace="deviceRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="identifier">
-                                        <integer key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="AULFOModeButton" destination="TcO-dk-gSy" id="Jgx-XH-jls"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="La1-yz-ZAT" customClass="FXButton">
