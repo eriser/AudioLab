@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC9962AD1AFBE59D0015FBE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9962AC1AFBE59D0015FBE8 /* AppDelegate.m */; };
+		CC9962AF1AFBE59D0015FBE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9962AE1AFBE59D0015FBE8 /* main.m */; };
+		CC9962B11AFBE59D0015FBE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9962B01AFBE59D0015FBE8 /* Images.xcassets */; };
+		CC9962B41AFBE59D0015FBE8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC9962B21AFBE59D0015FBE8 /* MainMenu.xib */; };
+		CC9962C01AFBE59D0015FBE8 /* SpeechSynthesisCoreAudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9962BF1AFBE59D0015FBE8 /* SpeechSynthesisCoreAudioTests.m */; };
+		CC9962CB1AFBE61D0015FBE8 /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9962CA1AFBE61D0015FBE8 /* AudioController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC9962BA1AFBE59D0015FBE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC99629E1AFBE59D0015FBE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC9962A51AFBE59D0015FBE8;
+			remoteInfo = SpeechSynthesisCoreAudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC9962A61AFBE59D0015FBE8 /* SpeechSynthesisCoreAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechSynthesisCoreAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9962AA1AFBE59D0015FBE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC9962AB1AFBE59D0015FBE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CC9962AC1AFBE59D0015FBE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CC9962AE1AFBE59D0015FBE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC9962B01AFBE59D0015FBE8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CC9962B31AFBE59D0015FBE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CC9962B91AFBE59D0015FBE8 /* SpeechSynthesisCoreAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechSynthesisCoreAudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9962BE1AFBE59D0015FBE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC9962BF1AFBE59D0015FBE8 /* SpeechSynthesisCoreAudioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeechSynthesisCoreAudioTests.m; sourceTree = "<group>"; };
+		CC9962C91AFBE61D0015FBE8 /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
+		CC9962CA1AFBE61D0015FBE8 /* AudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC9962A31AFBE59D0015FBE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC9962B61AFBE59D0015FBE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC99629D1AFBE59D0015FBE8 = {
+			isa = PBXGroup;
+			children = (
+				CC9962A81AFBE59D0015FBE8 /* SpeechSynthesisCoreAudio */,
+				CC9962BC1AFBE59D0015FBE8 /* SpeechSynthesisCoreAudioTests */,
+				CC9962A71AFBE59D0015FBE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC9962A71AFBE59D0015FBE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC9962A61AFBE59D0015FBE8 /* SpeechSynthesisCoreAudio.app */,
+				CC9962B91AFBE59D0015FBE8 /* SpeechSynthesisCoreAudioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC9962A81AFBE59D0015FBE8 /* SpeechSynthesisCoreAudio */ = {
+			isa = PBXGroup;
+			children = (
+				CC9962AB1AFBE59D0015FBE8 /* AppDelegate.h */,
+				CC9962AC1AFBE59D0015FBE8 /* AppDelegate.m */,
+				CC9962C91AFBE61D0015FBE8 /* AudioController.h */,
+				CC9962CA1AFBE61D0015FBE8 /* AudioController.m */,
+				CC9962B01AFBE59D0015FBE8 /* Images.xcassets */,
+				CC9962B21AFBE59D0015FBE8 /* MainMenu.xib */,
+				CC9962A91AFBE59D0015FBE8 /* Supporting Files */,
+			);
+			path = SpeechSynthesisCoreAudio;
+			sourceTree = "<group>";
+		};
+		CC9962A91AFBE59D0015FBE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC9962AA1AFBE59D0015FBE8 /* Info.plist */,
+				CC9962AE1AFBE59D0015FBE8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC9962BC1AFBE59D0015FBE8 /* SpeechSynthesisCoreAudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC9962BF1AFBE59D0015FBE8 /* SpeechSynthesisCoreAudioTests.m */,
+				CC9962BD1AFBE59D0015FBE8 /* Supporting Files */,
+			);
+			path = SpeechSynthesisCoreAudioTests;
+			sourceTree = "<group>";
+		};
+		CC9962BD1AFBE59D0015FBE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC9962BE1AFBE59D0015FBE8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC9962A51AFBE59D0015FBE8 /* SpeechSynthesisCoreAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC9962C31AFBE59D0015FBE8 /* Build configuration list for PBXNativeTarget "SpeechSynthesisCoreAudio" */;
+			buildPhases = (
+				CC9962A21AFBE59D0015FBE8 /* Sources */,
+				CC9962A31AFBE59D0015FBE8 /* Frameworks */,
+				CC9962A41AFBE59D0015FBE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeechSynthesisCoreAudio;
+			productName = SpeechSynthesisCoreAudio;
+			productReference = CC9962A61AFBE59D0015FBE8 /* SpeechSynthesisCoreAudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC9962B81AFBE59D0015FBE8 /* SpeechSynthesisCoreAudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC9962C61AFBE59D0015FBE8 /* Build configuration list for PBXNativeTarget "SpeechSynthesisCoreAudioTests" */;
+			buildPhases = (
+				CC9962B51AFBE59D0015FBE8 /* Sources */,
+				CC9962B61AFBE59D0015FBE8 /* Frameworks */,
+				CC9962B71AFBE59D0015FBE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC9962BB1AFBE59D0015FBE8 /* PBXTargetDependency */,
+			);
+			name = SpeechSynthesisCoreAudioTests;
+			productName = SpeechSynthesisCoreAudioTests;
+			productReference = CC9962B91AFBE59D0015FBE8 /* SpeechSynthesisCoreAudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC99629E1AFBE59D0015FBE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Ness;
+				TargetAttributes = {
+					CC9962A51AFBE59D0015FBE8 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					CC9962B81AFBE59D0015FBE8 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = CC9962A51AFBE59D0015FBE8;
+					};
+				};
+			};
+			buildConfigurationList = CC9962A11AFBE59D0015FBE8 /* Build configuration list for PBXProject "SpeechSynthesisCoreAudio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC99629D1AFBE59D0015FBE8;
+			productRefGroup = CC9962A71AFBE59D0015FBE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC9962A51AFBE59D0015FBE8 /* SpeechSynthesisCoreAudio */,
+				CC9962B81AFBE59D0015FBE8 /* SpeechSynthesisCoreAudioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC9962A41AFBE59D0015FBE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9962B11AFBE59D0015FBE8 /* Images.xcassets in Resources */,
+				CC9962B41AFBE59D0015FBE8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC9962B71AFBE59D0015FBE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC9962A21AFBE59D0015FBE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9962CB1AFBE61D0015FBE8 /* AudioController.m in Sources */,
+				CC9962AF1AFBE59D0015FBE8 /* main.m in Sources */,
+				CC9962AD1AFBE59D0015FBE8 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC9962B51AFBE59D0015FBE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9962C01AFBE59D0015FBE8 /* SpeechSynthesisCoreAudioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC9962BB1AFBE59D0015FBE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC9962A51AFBE59D0015FBE8 /* SpeechSynthesisCoreAudio */;
+			targetProxy = CC9962BA1AFBE59D0015FBE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC9962B21AFBE59D0015FBE8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC9962B31AFBE59D0015FBE8 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC9962C11AFBE59D0015FBE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CC9962C21AFBE59D0015FBE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CC9962C41AFBE59D0015FBE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpeechSynthesisCoreAudio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC9962C51AFBE59D0015FBE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpeechSynthesisCoreAudio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CC9962C71AFBE59D0015FBE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SpeechSynthesisCoreAudioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeechSynthesisCoreAudio.app/Contents/MacOS/SpeechSynthesisCoreAudio";
+			};
+			name = Debug;
+		};
+		CC9962C81AFBE59D0015FBE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SpeechSynthesisCoreAudioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeechSynthesisCoreAudio.app/Contents/MacOS/SpeechSynthesisCoreAudio";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC9962A11AFBE59D0015FBE8 /* Build configuration list for PBXProject "SpeechSynthesisCoreAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC9962C11AFBE59D0015FBE8 /* Debug */,
+				CC9962C21AFBE59D0015FBE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC9962C31AFBE59D0015FBE8 /* Build configuration list for PBXNativeTarget "SpeechSynthesisCoreAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC9962C41AFBE59D0015FBE8 /* Debug */,
+				CC9962C51AFBE59D0015FBE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC9962C61AFBE59D0015FBE8 /* Build configuration list for PBXNativeTarget "SpeechSynthesisCoreAudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC9962C71AFBE59D0015FBE8 /* Debug */,
+				CC9962C81AFBE59D0015FBE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC99629E1AFBE59D0015FBE8 /* Project object */;
+}
